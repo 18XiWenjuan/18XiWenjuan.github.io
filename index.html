@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="奚文涓的个人学术主页，研究兴趣包括多模态学习、时序基础模型与大语言模型。">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>奚文涓 · 个人主页</title>
+  <style>
+    :root{--ink:#20241f;--muted:#687068;--line:#dfe2da;--paper:#f7f6f2;--white:#fffefa;--green:#41654e;--pale:#eaf0e8;--serif:Georgia,"Songti SC","Noto Serif SC",serif;--sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.72}a{color:inherit;text-decoration-color:#9cad9b;text-underline-offset:4px}a:hover{color:var(--green)}.shell{max-width:1120px;margin:auto;padding:0 34px}.topbar{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.brand{font-family:var(--serif);font-size:18px;letter-spacing:.03em}.nav{display:flex;gap:25px;font-size:13px;color:#505950}.nav a{text-decoration:none}.hero{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:72px;padding:78px 0 58px;align-items:start}.eyebrow,.section-kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--green);font-weight:700}.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(44px,6vw,68px);line-height:1.1;letter-spacing:-.045em;margin:18px 0 17px}.hero h1 span{display:block;font-family:var(--sans);font-size:17px;letter-spacing:.03em;color:var(--muted);margin-top:14px}.intro{font-size:16px;max-width:690px;color:#424941;margin:0}.focus{margin-top:27px;display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:12px;color:#425847;background:var(--pale);padding:5px 11px;border-radius:99px}.profile-card{background:var(--white);border:1px solid var(--line);padding:16px;box-shadow:0 12px 35px #26301b08}.profile-photo{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:72% 42%;margin-bottom:17px}.profile-card h2{font:500 20px var(--serif);margin:0}.profile-card .role{font-size:12px;color:var(--muted);line-height:1.6;margin:5px 0 18px}.profile-card .rule{height:1px;background:var(--line);margin:16px 0}.profile-card dl{margin:0;display:grid;gap:12px}.profile-card dt{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#7b8379}.profile-card dd{margin:1px 0 0;font-size:12px;line-height:1.55}.section{padding:47px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:210px 1fr;gap:38px;margin-bottom:24px}.section-head h2{font:500 29px/1.2 var(--serif);margin:6px 0 0;letter-spacing:-.02em}.section-body{min-width:0}.section-lead{margin:0 0 22px;color:#515950;font-size:14px}.timeline{display:grid;gap:20px}.entry{display:grid;grid-template-columns:134px 1fr;gap:22px;padding-bottom:20px;border-bottom:1px solid #e8e9e4}.entry:last-child{border-bottom:0;padding-bottom:0}.date{font-size:11px;color:#747c73;line-height:1.55;padding-top:3px}.entry h3{font-size:15px;line-height:1.45;margin:0 0 4px;font-weight:650}.entry .sub{font-size:12px;color:var(--green);margin-bottom:7px}.entry p{font-size:13px;color:#515850;margin:0}.entry ul{margin:8px 0 0;padding-left:18px;color:#515850;font-size:12px}.entry li+li{margin-top:4px}.publication{background:var(--white);border:1px solid var(--line);padding:20px 22px;margin-bottom:12px}.pub-top{display:flex;gap:12px;align-items:flex-start;justify-content:space-between}.publication h3{font:500 18px/1.45 var(--serif);margin:0 0 7px}.venue{white-space:nowrap;color:var(--green);background:var(--pale);border-radius:99px;padding:3px 9px;font-size:10px}.publication p{font-size:12px;color:#596159;margin:6px 0 0}.publication .contribution{font-size:11px;color:#7a8178}.grid-two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.project{border:1px solid var(--line);background:var(--white);padding:19px 20px}.project h3{font:500 17px/1.45 var(--serif);margin:0 0 7px}.project p{font-size:12px;color:#586057;margin:0}.awardlist{display:grid;grid-template-columns:1fr 1fr;gap:10px}.award{padding:13px 15px;border-left:2px solid #9cad9b;background:#fffefa;font-size:12px}.award strong{display:block;font-size:12px;font-weight:650}.award span{display:block;color:#747c73;margin-top:3px}.skillgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.skill{padding:17px 18px;background:var(--white);border:1px solid var(--line)}.skill h3{font-size:12px;margin:0 0 5px}.skill p{font-size:12px;color:#5c645b;margin:0}.footer{border-top:1px solid var(--line);padding:23px 0 34px;color:#7b8279;font-size:11px;display:flex;justify-content:space-between;gap:12px}.backtop{color:var(--green);text-decoration:none}
+    @media(max-width:760px){.shell{padding:0 21px}.topbar{height:auto;min-height:66px;align-items:flex-start;padding:17px 0;gap:16px}.nav{gap:13px;flex-wrap:wrap;justify-content:flex-end;font-size:11px}.brand{font-size:15px;white-space:nowrap}.hero{grid-template-columns:1fr;gap:27px;padding:51px 0 39px}.profile-card{max-width:420px}.section{padding:35px 0}.section-head{grid-template-columns:1fr;gap:9px;margin-bottom:18px}.section-head h2{font-size:25px}.entry{grid-template-columns:1fr;gap:3px}.date{font-size:10px}.grid-two,.awardlist,.skillgrid{grid-template-columns:1fr}.pub-top{display:block}.venue{display:inline-block;margin:4px 0}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <div class="shell" id="top">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="奚文涓主页">奚文涓 · Academic Homepage</a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#about">简介</a><a href="#education">教育</a><a href="#experience">经历</a><a href="#publications">论文</a><a href="#awards">荣誉</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="about">
+        <div>
+          <div class="eyebrow">Personal Homepage · 个人主页</div>
+          <h1>奚文涓<span>Wenjuan Xi</span></h1>
+          <p class="intro">我目前在浙江大学计算机科学与工程学院攻读博士学位，研究方向包括时序基础模型与多模态学习。此前在上海蔚来汽车从事全模态大模型研发，并在南京理工大学完成计算机技术硕士学习。</p>
+          <div class="focus"><span class="tag">多模态学习</span><span class="tag">时序基础模型</span><span class="tag">大语言模型</span><span class="tag">多模态检索</span></div>
+        </div>
+        <aside class="profile-card" aria-label="个人概况">
+          <img class="profile-photo" src="portrait.jpg" alt="奚文涓在海边的照片">
+          <h2>奚文涓</h2>
+          <p class="role">浙江大学 · 计算机科学与工程学院<br>博士研究生</p>
+          <div class="rule"></div>
+          <dl>
+            <div><dt>研究组</dt><dd>普适计算实验室</dd></div>
+            <div><dt>研究方向</dt><dd>时序基础模型、多模态学习</dd></div>
+            <div><dt>所在地</dt><dd>杭州，中国</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-head"><div><div class="section-kicker">Background</div><h2>教育经历</h2></div><div class="section-body timeline">
+          <article class="entry"><div class="date">2026.09 — 2030.03</div><div><h3>浙江大学 · 计算机科学与工程学院</h3><div class="sub">计算机科学与技术 · 博士研究生</div><p>普适计算实验室；研究方向：时序基础模型、多模态学习。</p></div></article>
+          <article class="entry"><div class="date">2022.09 — 2025.04</div><div><h3>南京理工大学 · 计算机科学与工程学院</h3><div class="sub">计算机技术 · 硕士</div><p>PCALab；研究方向：多模态学习、自然语言处理、数据挖掘。GPA 3.52/4.0；获一等奖学金、小米特等奖学金。</p></div></article>
+          <article class="entry"><div class="date">2018.09 — 2022.06</div><div><h3>山东师范大学 · 信息科学与工程学院</h3><div class="sub">计算机科学与技术 · 学士</div><p>GPA 3.82/4.0；获一等奖学金、优秀学生。</p></div></article>
+        </div></div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-head"><div><div class="section-kicker">Experience</div><h2>工作经历</h2></div><div class="section-body timeline">
+          <article class="entry"><div class="date">2025.04 — 2026.08</div><div><h3>上海蔚来汽车有限公司</h3><div class="sub">数字座舱与软件开发部 · 全模态算法工程师</div><p>负责座舱端侧全模态大模型及流式视频主动交互大模型，覆盖多模态训练、推理评测与端侧效率优化。</p><ul><li>从零搭建 Omni 模型五阶段训练架构及多模态数据 Pipeline，支持视觉、语音、文本联合训练与结构化评测。</li><li>通过 Token 压缩、动态视频编码和多视图输入优化端侧感知；简历所列指标包括占位 ACC 97.3%、抽烟检测 F1 91.3%、Tool-Calling 参数 ACC 98.4%。</li><li>构建基于 GRPO 的多任务偏好对齐框架，并研发事件驱动的流式主动交互机制。</li><li>主导“百变 NOMI 养成计划”方案与端侧 Omni 部署，完成个性化迎宾、媒体推荐、ASR 增强与主动关怀等功能 Demo；获智舱首届 AI Agent 创新挑战赛一等奖（3/158）。</li></ul></div></article>
+          <article class="entry"><div class="date">2023.01 — 2023.07</div><div><h3>百度在线网络技术（北京）有限公司</h3><div class="sub">人才智库组 · 算法实习生</div><p>参与开放场景新类发现、人岗匹配算法优化与职位数据集建设；提出的开放世界半监督算法中稿 ICDM。</p></div></article>
+        </div></div>
+      </section>
+
+      <section class="section" id="publications">
+        <div class="section-head"><div><div class="section-kicker">Research</div><h2>代表论文</h2></div><div class="section-body">
+          <article class="publication"><div class="pub-top"><h3>Rebalanced Vision-Language Retrieval Considering Structure-Aware Distillation</h3><span class="venue">TIP 2024 · CCF-A</span></div><div class="contribution">学生一作</div><p>提出多粒度蒸馏模块，通过表征层面蒸馏与结构感知蒸馏缓解模态不平衡，在多个公开数据集的跨模态、单模态及混合模态检索任务上取得领先表现。</p></article>
+          <article class="publication"><div class="pub-top"><h3>Robust Semi-Supervised Learning for Self-learning Open-World Classes</h3><span class="venue">ICDM 2023 · CCF-B · Oral</span></div><div class="contribution">一作</div><p>提出自学习开放世界类别的半监督方法 SSOC，显式建模类别中心，并通过成对相似性约束对齐未标记数据的预测空间与嵌入空间。</p></article>
+        </div></div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-head"><div><div class="section-kicker">Selected Work</div><h2>项目经历</h2></div><div class="section-body grid-two">
+          <article class="project"><h3>多模态学习工具包 OMML</h3><p>参与开发基于 PaddlePaddle 与 PyTorch 的多模态学习工具包，支持模态联合学习、跨模态检索、图像字幕等任务，并用于智能招聘简历分析与运动鞋真伪识别。</p></article>
+          <article class="project"><h3>视频违规行为智能检测系统</h3><p>参与国家级大学生创新训练项目，面向加油站场景开展视频违规行为智能检测，项目已结项。</p></article>
+        </div></div>
+      </section>
+
+      <section class="section" id="awards">
+        <div class="section-head"><div><div class="section-kicker">Recognition</div><h2>竞赛与荣誉</h2></div><div class="section-body awardlist">
+          <div class="award"><strong>ICCV 2023 情感和文化智能 AI 挑战赛 · 情绪预测冠军</strong><span>2023.10 · F1-score 62.7%</span></div>
+          <div class="award"><strong>智舱首届 AI Agent 创新挑战赛 · 一等奖</strong><span>排名 3 / 158</span></div>
+          <div class="award"><strong>ATEC 科技精英赛 · 数字化运营赛道第四名</strong><span>2023.02</span></div>
+          <div class="award"><strong>中国大学生程序设计竞赛（CCPC）· 国家级三等奖</strong><span>2021</span></div>
+          <div class="award"><strong>蓝桥杯软件和信息技术专业人才大赛 · 国家级一等奖</strong><span>2021 · 前 0.5%</span></div>
+          <div class="award"><strong>全国大学生算法设计与编程挑战赛 · 国家级一等奖</strong><span>2021</span></div>
+          <div class="award"><strong>全国大学生数学竞赛 · 国家级三等奖</strong><span>2020</span></div>
+        </div></div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-head"><div><div class="section-kicker">Toolkit</div><h2>专业技能</h2></div><div class="section-body skillgrid">
+          <div class="skill"><h3>算法与研究</h3><p>多模态大模型、大语言模型后训练、数据结构与竞赛算法；具备 3 年 ACM-ICPC 竞赛经验。</p></div>
+          <div class="skill"><h3>框架与训练</h3><p>PyTorch、Swift、EvalScope、DeepSpeed、Megatron；具备多机多卡训练经验。</p></div>
+          <div class="skill"><h3>编程与环境</h3><p>C/C++、Python、Linux 开发环境与常用工具。</p></div>
+          <div class="skill"><h3>语言</h3><p>IELTS 6.5；可阅读英文文献、进行英文汇报与日常交流。</p></div>
+        </div></div>
+      </section>
+    </main>
+    <footer class="footer"><span>© 2026 Wenjuan Xi · 根据个人简历整理</span><a class="backtop" href="#top">返回顶部 ↑</a></footer>
+  </div>
+</body>
+</html>
